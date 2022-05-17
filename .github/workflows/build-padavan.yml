@@ -115,6 +115,17 @@ jobs:
         #########################################################################################
         #自定义添加其它功能请参考源码configs/templates/目录下的config文件。按照上面的格式添加即可
         #格式如下：
+        sed -i '/CONFIG_FIRMWARE_CPU_880MHZ/d' .config
+        echo "CONFIG_FIRMWARE_CPU_1100MHZ=y" >> .config
+
+        sed -i '/CONFIG_FIRMWARE_ENABLE_IPV6/d' .config
+        echo "CONFIG_FIRMWARE_ENABLE_IPV6=y" >> .config
+
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_QOS/d' .config
+        echo "CONFIG_FIRMWARE_INCLUDE_QOS=y" >> .config
+
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_SOCAT/d' .config
+        echo "CONFIG_FIRMWARE_INCLUDE_SOCAT=y" >> .config
 
         sed -i '/CONFIG_FIRMWARE_INCLUDE_TTYD/d' .config
         echo "CONFIG_FIRMWARE_INCLUDE_TTYD=y" >> .config

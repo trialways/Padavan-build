@@ -135,6 +135,12 @@ jobs:
 
         sed -i '/CONFIG_FIRMWARE_INCLUDE_WIREGUARD/d' .config
         echo "CONFIG_FIRMWARE_INCLUDE_WIREGUARD=y" >> .config
+
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_TROJAN/d' .config
+        echo "CONFIG_FIRMWARE_INCLUDE_TROJAN=y" >> .config
+
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_ADGUARDHOME/d' .config
+        echo "CONFIG_FIRMWARE_INCLUDE_ADGUARDHOME=y" >> .config
         #########################################################################################
         sudo ./clear_tree
         sudo ./build_firmware_modify $TNAME 0

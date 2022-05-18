@@ -115,11 +115,59 @@ jobs:
         #########################################################################################
         #自定义添加其它功能请参考源码configs/templates/目录下的config文件。按照上面的格式添加即可
         #格式如下：
-        sed -i '/CONFIG_FIRMWARE_CPU_880MHZ/d' .config
-        echo "CONFIG_FIRMWARE_CPU_1100MHZ=y" >> .config
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_TCPDUMP/d' .config
+        echo "CONFIG_FIRMWARE_INCLUDE_TCPDUMP=y" >> .config
 
-        sed -i '/CONFIG_FIRMWARE_ENABLE_IPV6/d' .config
-        echo "CONFIG_FIRMWARE_ENABLE_IPV6=y" >> .config
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_EAP_PEAP/d' .config
+        echo "CONFIG_FIRMWARE_INCLUDE_EAP_PEAP=y" >> .config
+        
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_HTTPS/d' .config
+        echo "CONFIG_FIRMWARE_INCLUDE_HTTPS=y" >> .config
+
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_SFTP/d' .config
+        echo "CONFIG_FIRMWARE_INCLUDE_SFTP=y" >> .config
+        
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_OPENSSH/d' .config
+        echo "CONFIG_FIRMWARE_INCLUDE_OPENSSH=y" >> .config
+
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_OPENVPN/d' .config
+        echo "CONFIG_FIRMWARE_INCLUDE_OPENVPN=y" >> .config
+        
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_OPENSSL_EC/d' .config
+        echo "CONFIG_FIRMWARE_INCLUDE_OPENSSL_EC=y" >> .config
+
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_OPENSSL_EXE/d' .config
+        echo "CONFIG_FIRMWARE_INCLUDE_OPENSSL_EXE=y" >> .config
+        
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_XUPNPD/d' .config
+        echo "CONFIG_FIRMWARE_INCLUDE_XUPNPD=y" >> .config
+
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_FFMPEG_NEW/d' .config
+        echo "CONFIG_FIRMWARE_INCLUDE_FFMPEG_NEW=y" >> .config
+        
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_CURL/d' .config
+        echo "CONFIG_FIRMWARE_INCLUDE_CURL=y" >> .config
+        
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_DOGCOM/d' .config
+        echo "CONFIG_FIRMWARE_INCLUDE_DOGCOM=y" >> .config
+
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_MINIEAP/d' .config
+        echo "CONFIG_FIRMWARE_INCLUDE_MINIEAP=y" >> .config
+        
+        sed -i '/ONFIG_FIRMWARE_INCLUDE_NJIT_CLIENT/d' .config
+        echo "ONFIG_FIRMWARE_INCLUDE_NJIT_CLIENT=y" >> .config
+
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_NANO/d' .config
+        echo "CONFIG_FIRMWARE_INCLUDE_NANO=y" >> .config
+        
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_IPERF3/d' .config
+        echo "CONFIG_FIRMWARE_INCLUDE_IPERF3=y" >> .config
+        
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_MTR/d' .config
+        echo "CONFIG_FIRMWARE_INCLUDE_MTR=y" >> .config
+        
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_SRELAY/d' .config
+        echo "CONFIG_FIRMWARE_INCLUDE_SRELAY=y" >> .config
 
         sed -i '/CONFIG_FIRMWARE_INCLUDE_QOS/d' .config
         echo "CONFIG_FIRMWARE_INCLUDE_QOS=y" >> .config

@@ -89,14 +89,14 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_ZEROTIER=y" >> .config #zerotier ~1.3M
         echo "CONFIG_FIRMWARE_INCLUDE_ALIDDNS=y" >> .config #aliddns
         
-        echo "CONFIG_FIRMWARE_INCLUDE_FRPC=y" >> .config
-        echo "CONFIG_FIRMWARE_INCLUDE_FRPS=y" >> .config
+        #echo "CONFIG_FIRMWARE_INCLUDE_FRPC=y" >> .config
+        #echo "CONFIG_FIRMWARE_INCLUDE_FRPS=y" >> .config
         #echo "CONFIG_FIRMWARE_INCLUDE_TUNSAFE=y" >> .config
         #echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNS=y" >> .config
         #echo "CONFIG_FIRMWARE_INCLUDE_TROJAN=y" >> .config
         #echo "CONFIG_FIRMWARE_INCLUDE_ADGUARDHOME=y" >> .config
         #echo "CONFIG_FIRMWARE_INCLUDE_WYY=y" >> .config
-        echo "CONFIG_FIRMWARE_INCLUDE_QOS=y" >> .config
+        #echo "CONFIG_FIRMWARE_INCLUDE_QOS=y" >> .config
         
         else
         echo "CONFIG_FIRMWARE_INCLUDE_MENTOHUST=n" >> .config #MENTOHUST

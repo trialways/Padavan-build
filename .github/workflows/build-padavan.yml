@@ -97,9 +97,9 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_SQM=y" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_VLMCSD=y" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_TTYD=y" >> .config
-        echo "CONFIG_FIRMWARE_INCLUDE_FRPC=y" >> .config
-        echo "CONFIG_FIRMWARE_INCLUDE_FRPS=y" >> .config
-        echo "CONFIG_FIRMWARE_INCLUDE_TUNSAFE=y" >> .config
+        #echo "CONFIG_FIRMWARE_INCLUDE_FRPC=y" >> .config
+        #echo "CONFIG_FIRMWARE_INCLUDE_FRPS=y" >> .config
+        #echo "CONFIG_FIRMWARE_INCLUDE_TUNSAFE=y" >> .config
         
         #echo "CONFIG_FIRMWARE_INCLUDE_ADGUARDHOME=y" >> .config
         #echo "CONFIG_FIRMWARE_INCLUDE_WYY=y" >> .config

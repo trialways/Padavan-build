@@ -1,0 +1,38 @@
+name: Windows/Ubuntu/MacOS
+
+on:
+  watch:
+    types: [started]
+  #push:
+    #paths:
+    #- 'src/**'
+#on:
+  #workflow_dispatch:
+  #push:
+    #branches: [ "master" ]
+    #paths: [ "**.rs", "**.toml" ]
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build:
+
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ windows-latest, ubuntu-latest, macos-latest ]
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build
+      # run: cargo build --workspace --exclude aida64-keys-gui --verbose
+      run: cargo build --verbose
+    - name: Run tests
+      #run: cargo test --workspace --exclude aida64-keys-gui --verbose
+      run: cargo test --verbose
+    - name : Upload artifact
+      uses: actions/upload-artifact@master
+      with:
+       name: OS_64-keysGUI
+       path: ./
